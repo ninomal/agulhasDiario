@@ -10,12 +10,9 @@ int main(){
     int forDay = {0};
     string monthly ;
     string linkString;
-    float totalSum ;
-    float totalDays ;
-    float totalConsume;
 
-   
 
+    
 }
 
     //add item bank
