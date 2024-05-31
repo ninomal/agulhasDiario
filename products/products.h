@@ -1,8 +1,9 @@
 #include <iostream>
 #include <stdio.h>
 #include <math.h>
-
+#include <enums\EnumsMonth.h>
 using namespace std;
+
 
 class Products{
     private:
@@ -11,7 +12,7 @@ class Products{
     int monthly ;
     int finura ;
     int agulhasBrokenDay;
-    bool mesReaptVar;
+    enum EnumsMonth mesReaptVar = REPET;
     float totalSum ;
     float totalDays ;
     float totalConsume;
@@ -20,6 +21,7 @@ class Products{
     public:
     int monthlySlect(int month){
         monthly = month;
+        mesReaptVar = NOTREPET;
         return monthly;
     }
 
