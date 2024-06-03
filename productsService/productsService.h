@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 #include <string>
+#include <Api\api.h>
 
 
 using namespace std;
@@ -8,14 +9,14 @@ using namespace std;
 //here
 class ProductsService{
     private:
-        int *agulhas ;
-        float *total;
-        int *month;
-        string *monthString;
+        float total;
+        int month;
+        Api api;
+        string monthString;
 
     public:
-        int agulhasnbroke(){
-          //agulhas = 0;
+        int agulhasnbroke(int agulhas){
+          api.addAgulhasMsql(agulhas);
         } 
 
 

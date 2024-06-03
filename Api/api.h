@@ -23,6 +23,9 @@ class Api{
         day = stoi(htmlSlice);
     }
 
+    void addAgulhasMsql(int agulhas){
+        //beta
+    }
 
 
 };

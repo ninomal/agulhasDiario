@@ -38,6 +38,7 @@ class Products{
 
     int agulhasBroke(int agulhas){
         agulhasBrokenDay = agulhas;
+        productsService.agulhasnbroke(agulhasBrokenDay);
         return agulhasBrokenDay;
     }
 
