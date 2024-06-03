@@ -4,7 +4,7 @@
 
 using namespace std;
 
-class enumsMonth{
+class EnumsMonthString{
     private:
     string nameOfMonth;
 

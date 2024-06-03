@@ -2,6 +2,10 @@
 #include <stdio.h>
 #include <math.h>
 #include <enums\EnumsMonth.h>
+#include <enums\enumsStringMonth.h>
+#include <productsService\productsService.h>
+
+
 using namespace std;
 
 
@@ -12,7 +16,9 @@ class Products{
     int monthly ;
     int finura ;
     int agulhasBrokenDay;
+    ProductsService productsService;
     enum EnumsMonth mesReaptVar = REPET;
+    EnumsMonthString enumsStrings;
     float totalSum ;
     float totalDays ;
     float totalConsume;
@@ -40,6 +46,11 @@ class Products{
         return finura;
     }
 
+    string monthString(int numberMonth){
+        return enumsStrings.selectMonthStrig(numberMonth);
+    }
+
+    
    // enum boll monthly reapt
 
 };
