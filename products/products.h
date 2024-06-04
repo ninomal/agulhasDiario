@@ -17,7 +17,7 @@ class Products{
     int finura ;
     int agulhasBrokenDay;
     ProductsService productsService;
-    enum EnumsMonth mesReaptVar = REPET;
+    enum EnumsMonth mesReaptEnum;
     EnumsMonthString enumsStrings;
     float totalSum ;
     float totalDays ;
@@ -27,7 +27,6 @@ class Products{
     public:
     int monthlySlect(int month){
         monthly = month;
-        mesReaptVar = NOTREPET;
         return monthly;
     }
 
@@ -52,6 +51,5 @@ class Products{
     }
 
     
-   // enum boll monthly reapt
 
 };

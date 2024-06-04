@@ -27,5 +27,15 @@ class Api{
         //beta
     }
 
+    void addAgulhasTotal(int agulhasTotal){
+        //beta
+    }
+    void addAgulhasAm(float agulhasAm){
+        //beta
+    }
 
+    //implement
+    bool firstDayCheck(){
+        return true;
+    }
 };
