@@ -2,7 +2,7 @@
 #include <math.h>
 #include <string>
 #include <Api\api.h>
-#include <enums\enumsMonth.h>
+#include "enums\enumsMonth.h"
 
 using namespace std;
 
@@ -14,7 +14,7 @@ class ProductsService{
         bool check;
         Api api;
         string monthString;
-        EnumsMonth enumRepeat;
+        EnumsRepeat enumRepeat;
 
     public:
       void agulhasnbroke(int agulhas){
@@ -37,7 +37,6 @@ class ProductsService{
         else{
           enumRepeat = REPET;
         }
-        
       }
 
 

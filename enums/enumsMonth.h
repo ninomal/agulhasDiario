@@ -1,4 +1,4 @@
-enum EnumsMonth{
+enum EnumsRepeat{
     REPET,
     NOTREPET
 };

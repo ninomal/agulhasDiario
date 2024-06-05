@@ -1,7 +1,7 @@
 #include <iostream>
 #include <stdio.h>
 #include <math.h>
-#include <enums\EnumsMonth.h>
+#include "enums\enumsMonth.h"
 #include <enums\enumsStringMonth.h>
 #include <productsService\productsService.h>
 
@@ -17,7 +17,7 @@ class Products{
     int finura ;
     int agulhasBrokenDay;
     ProductsService productsService;
-    enum EnumsMonth mesReaptEnum;
+    EnumsRepeat mesReaptEnum;
     EnumsMonthString enumsStrings;
     float totalSum ;
     float totalDays ;
