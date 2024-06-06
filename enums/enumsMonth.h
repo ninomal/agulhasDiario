@@ -1,4 +1,4 @@
-enum EnumsRepeat{
+enum  EnumsRepeat{
     REPET,
     NOTREPET
 };

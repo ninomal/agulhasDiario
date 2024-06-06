@@ -1,9 +1,9 @@
 #include <iostream>
 #include <stdio.h>
 #include <math.h>
-#include "enums\enumsMonth.h"
-#include <enums\enumsStringMonth.h>
-#include <productsService\productsService.h>
+#include "..\productsService\productsService.h"
+#include "..\enums\enumsMonth.h"
+#include "..\enums\enumsStringMonth.h"
 
 
 using namespace std;
@@ -11,18 +11,19 @@ using namespace std;
 
 class Products{
     private:
+    int checkDay;
     int days;
     int forDays = {0};
     int monthly ;
     int finura ;
     int agulhasBrokenDay;
     ProductsService productsService;
-    EnumsRepeat mesReaptEnum;
+    EnumsRepeat enumRepeat;
     EnumsMonthString enumsStrings;
     float totalSum ;
     float totalDays ;
     float totalConsume;
-
+    
 
     public:
     int monthlySlect(int month){
@@ -50,6 +51,15 @@ class Products{
         return enumsStrings.selectMonthStrig(numberMonth);
     }
 
+    void checkFirstDay(){
+        checkDay = productsService.firstDayMonth();
+        if (checkDay == 1){
+          enumRepeat = NOTREPET;
+        }
+        else{
+          enumRepeat = REPET;
+        }
+    }
     
 
 };

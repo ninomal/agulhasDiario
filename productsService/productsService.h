@@ -1,20 +1,20 @@
 #include <stdio.h>
 #include <math.h>
 #include <string>
-#include <Api\api.h>
-#include "enums\enumsMonth.h"
+#include "..\Api\api.h"
+
 
 using namespace std;
 
-//here
+
 class ProductsService{
     private:
         float total;
         int month;
-        bool check;
+        int checkDay;
         Api api;
         string monthString;
-        EnumsRepeat enumRepeat;
+        
 
     public:
       void agulhasnbroke(int agulhas){
@@ -29,14 +29,9 @@ class ProductsService{
         api.addAgulhasAm(agulhasAm);
       }
 
-      void firstDayMonth(){
-        check = api.firstDayCheck();
-        if (check == true){
-          enumRepeat = NOTREPET;
-        }
-        else{
-          enumRepeat = REPET;
-        }
+      int firstDayMonth(){
+        checkDay = api.firstDayCheck();
+        return checkDay;
       }
 
 
