@@ -19,18 +19,26 @@ class Api{
         //htlmSlice = colect here 
     }
 
-    int intConvHtml(string htmlSlice){
+    void intConvHtml(string htmlSlice){
         day = stoi(htmlSlice);
+    }
+
+    void addDayMsql(int day){
+        //beta
+    }
+
+    void addMonthMsql(int day){
+        //beta
     }
 
     void addAgulhasMsql(int agulhas){
         //beta
     }
 
-    void addAgulhasTotal(int agulhasTotal){
+    void addAgulhasTotalMsql(int agulhasTotal){
         //beta
     }
-    void addAgulhasAm(float agulhasAm){
+    void addAgulhasAVgMsql(float agulhasAm){
         //beta
     }
 

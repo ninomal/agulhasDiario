@@ -13,19 +13,19 @@ class NedleBroken{
         month = monthArg;
     }
 
-    int finuraGet(){
+    int getFinura(){
         return finura;
     }
 
-    int agullhasGet(){
+    int getAgulhas(){
         return agulhasQuebradas;
     }
 
-    int dayGet(){
+    int getDay(){
         return day;
     }
 
-    int monthGet(){
+    int getMonth(){
         return month;
     }
 

@@ -2,6 +2,7 @@
 #include <math.h>
 #include <string>
 #include "..\Api\api.h"
+#include "..\entities\needleBroken.h"
 
 
 using namespace std;
@@ -14,19 +15,28 @@ class ProductsService{
         int checkDay;
         Api api;
         string monthString;
+        NedleBroken needleBroken;
         
 
     public:
-      void agulhasnbroke(int agulhas){
-          api.addAgulhasMsql(agulhas);
+      void agulhasnbroke(){
+          api.addAgulhasMsql(needleBroken.getAgulhas());
+        } 
+
+      void day(){
+          api.addDayMsql(needleBroken.getDay());
+        } 
+      
+      void month(){
+          api.addMonthMsql(needleBroken.getMonth());
         } 
 
       void agulhasTotal(int agulhasTotal){
-        api.addAgulhasTotal(agulhasTotal);
+        api.addAgulhasTotalMsql(agulhasTotal);
       }
 
-      void agulhasAM(float agulhasAm){
-        api.addAgulhasAm(agulhasAm);
+      void agulhasAVG(float agulhasAm){
+        api.addAgulhasAVgMsql(agulhasAm);
       }
 
       int firstDayMonth(){

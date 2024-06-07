@@ -13,24 +13,24 @@ int main(){
     int agulhasQuebradas;
     int monthly ;
     string linkString;
-    Products products;
+    //Products products;
     
-    
+    //here v
     cout << "Mes: ";
     cin >> monthly;
-    products.monthlySlect(monthly);
+    
 
     cout << "Dia";
     cin >> day;
-    products.daySelect(day);
+    
 
     cout << "Finura:";
     cin >> finura;
-    products.finuraSelect(finura);
+    
 
     cout << "Agulhas quebradas: " ;
     cin >> agulhasQuebradas;
-    products.agulhasBroke(agulhasQuebradas);
+    
    
 
     
