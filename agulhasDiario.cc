@@ -15,6 +15,7 @@ int main(){
     string linkString;
     Products products;
     
+    
     cout << "Mes: ";
     cin >> monthly;
     products.monthlySlect(monthly);
